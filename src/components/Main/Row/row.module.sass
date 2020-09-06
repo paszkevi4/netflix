@@ -1,0 +1,19 @@
+.row
+    margin: 0 20px
+.row__posters
+    display: flex
+    overflow-y: hidden
+    overflow-x: scroll
+    padding: 15px
+
+.row__posters::-webkit-scrollbar
+    display: none
+
+.row__poster
+    width: 175px
+    object-fit: contain
+    padding-right: 15px
+    transition: transform 0.5s ease
+
+.row__poster:hover
+    transform: scale(1.1)
