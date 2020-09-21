@@ -3,24 +3,61 @@ $secondaryRed: #b81d24;
 $mainDark: #111;
 $mainLight: #f5f5f1;
 
+.header 
+    object-fit: contain
+    height: 1000px
+    position: relative
+    background-size: cover
+
 .header__container
-    padding-top: 140px
-    margin-left: 75px
-    height: 190px
-    h1
-        font-size: 3rem
-        font-weight: 800
-        padding-bottom: 0.5rem
+    position: absolute
+    z-index: 2
+    left: 60px
+    bottom: 310px
+    display: flex
+    flex-direction: column
+    img
+        width: 375px
+        object-fit: contain
+        margin-bottom: 55px
+    // h1
+    //     font-size: 3rem
+    //     font-weight: 800
+    //     padding-bottom: 0.5rem
+    // button
+    //     cursor: pointer
+    //     background: rgba(17, 17, 17, .7);
+    //     color: $mainLight
+    //     outline: none
+    //     border: none
+    //     font-weight: 700
+    //     border-radius: 0.2vw
+    //     padding: .5rem 2rem
+    //     margin-right: 1rem
+
+.header_button__group
     button
-        cursor: pointer
-        background: rgba(17, 17, 17, .7);
-        color: $mainLight
+        height: 57px
+        width: 155px
+        border-radius: 5px
+        font-size: 22px
+        font-weight: 700
         outline: none
         border: none
-        font-weight: 700
-        border-radius: 0.2vw
-        padding: .5rem 2rem
-        margin-right: 1rem
+        background: $mainLight
+        cursor: pointer
+        margin-right: 15px
+        padding-top: 5px
+        &:last-child
+            color: $mainLight
+            width: 212px
+            background: rgba(109, 109, 110, 0.7)
+        &:hover
+            opacity: 0.7
+        span
+            padding-left: 10px
+            vertical-align: 35%
+    
         
 
 .header__container_description
@@ -30,10 +67,23 @@ $mainLight: #f5f5f1;
     overflow: hidden
     text-overflow: clip
     height: 8.5rem
-    
+
+
+.header_fade
+    position: absolute
+    top: 0
+    width: 100%
+    overflow: hidden
+    height: 100%
+    div 
+        
+        height: 100%
+        background: radial-gradient(circle, transparent 25%, $mainDark)
+        width: 150vw
+
 .header__fade
     position: absolute
     bottom: 0
     width: 100%
-    height: 100px
-    background: linear-gradient(180deg, transparent, $mainDark 90%, $mainDark)
+    height: 150px
+    background: linear-gradient(180deg, transparent, $mainDark)

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Poster from './Poster/Poster';
 import axios from '../../API/api';
 import s from './row.module.sass';
 
@@ -19,18 +20,7 @@ function Row({ title, fetchUrl, isVertical }) {
       <h1 className={s.row__title}>{title}</h1>
       <div className={s.row__posters}>
         {movies.map((movie) => {
-          return (
-            <img
-              key={movie.id}
-              className={s.row__poster}
-              src={
-                isVertical
-                  ? `${IMAGE_URL + movie.poster_path}`
-                  : `${IMAGE_URL + movie?.backdrop_path}`
-              }
-              alt="movie poster"
-            />
-          );
+          return <Poster movie={movie} isVertical={false} />;
         })}
       </div>
     </div>
