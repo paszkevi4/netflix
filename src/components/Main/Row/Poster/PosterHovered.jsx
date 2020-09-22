@@ -1,13 +1,32 @@
 import React, { useState } from 'react';
-import s from './poster.module.sass';
 
-const PosterHovered = ({ movie, isVertical }) => {
+import ReactPlayer from 'react-player/youtube';
+import s from './poster.module.sass';
+import Button from '../../../common/Button/Button';
+
+const PosterHovered = ({ background }) => {
+  const [muted, setMuted] = useState(true);
+  const url = 'https://www.youtube.com/watch?v=ZAXA1DV4dtI&t=11s&ab_channel=Netflix';
   return (
-    <div className={s.post_hovered}>
-      <img src="" alt="img" />
-      <div className={s.post_hovered__buttons}></div>
-      <div className={s.post_hovered__markers}></div>
-    </div>
+    <>
+      <ReactPlayer url={url} width="400px" height="225px" playing loop muted={muted} />
+      <div className={s.btn_container}>
+        <div className={s.btn_container__inner}>
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </div>
+        <Button />
+      </div>
+
+      <div
+        onClick={() => {
+          setMuted(!muted);
+        }}>
+        123
+      </div>
+    </>
   );
 };
 

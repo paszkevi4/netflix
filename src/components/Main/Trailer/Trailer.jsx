@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player/youtube';
 import moneyheist from '../../../img/mh.png';
 
 //
@@ -20,10 +21,18 @@ const Trailer = () => {
     },
   };
 
+  const opts1 = {
+    width: '1040px',
+    height: '585px',
+  };
+
+  const url = 'https://www.youtube.com/watch?v=ZAXA1DV4dtI&t=11s&ab_channel=Netflix';
+
   return (
     <div className={s.trailer}>
       <div className={s.trailer_video}>
-        <YouTube videoId="fvCdLmxnkj0" opts={opts} />
+        {/* <YouTube videoId="fvCdLmxnkj0" opts={opts} /> */}
+        <ReactPlayer url={url} width="1040px" height="585px" playing muted loop />
       </div>
       <div className={s.trailer_description}>
         <img src={moneyheist} alt="moneyheist" />
