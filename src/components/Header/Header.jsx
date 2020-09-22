@@ -28,16 +28,8 @@ const Header = () => {
       }}>
       <div className={s.header__container}>
         <img src={luciferTitle} alt="Lucifer" />
-        <div className={s.header_button__group}>
-          <button>
-            {<PlayArrow fontSize="large" />}
-            <span>Play</span>
-          </button>
-          <button>
-            {<InfoOutlined fontSize="large" />}
-            <span>More Info</span>
-          </button>
-        </div>
+
+        <Buttons />
 
         {/* <h1>{movie?.name}</h1> */}
         {/* <p className={s.header__container_description}>{movie?.overview}</p> */}
@@ -46,6 +38,21 @@ const Header = () => {
         <div></div>
       </div>
       <div className={s.header__fade}></div>
+    </div>
+  );
+};
+
+export const Buttons = () => {
+  return (
+    <div className={s.header_button__group}>
+      <button>
+        {<PlayArrow fontSize="large" />}
+        <span>Play</span>
+      </button>
+      <button>
+        {<InfoOutlined fontSize="large" />}
+        <span>More Info</span>
+      </button>
     </div>
   );
 };

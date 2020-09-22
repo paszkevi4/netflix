@@ -8,6 +8,8 @@ const URIs = {
   comedies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
   horrors: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
   romances: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
+  documentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+  dramas: `/discover/movie?api_key=${API_KEY}&with_genres=18`,
 };
 
 export default URIs;
