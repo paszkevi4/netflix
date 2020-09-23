@@ -5,7 +5,7 @@ import s from './poster.module.sass';
 
 const PosterHovered = React.lazy(() => import('./PosterHovered'));
 
-const IMAGE_URL = 'https://image.tmdb.org/t/p/w300/';
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 
 const Poster = ({ movie, isVertical }) => {
   const [showMovie, setShowMovie] = useState(false);

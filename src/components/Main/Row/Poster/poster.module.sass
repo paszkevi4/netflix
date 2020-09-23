@@ -11,6 +11,7 @@ $standWidth: calc(100vw / 6.6)
         .row_poster__inner
             height: 400px
             width: 400px
+            transition-delay: .5s
             visibility: visible
             opacity: 1
             top: -120px
@@ -19,17 +20,18 @@ $standWidth: calc(100vw / 6.6)
 .row_poster__inner
     width: calc(#{$standWidth} )
     height: calc(#{$standWidth} / 1.8)
-    background: #111
+    border-radius: 10px
+    overflow: hidden
+    -webkit-box-shadow: 0px 5px 7px 3px rgba(0,0,0,0.7)
+    background: #141414
     background-size: contain
     background-repeat: no-repeat
     z-index: 5
-    position: absolute
+    position: relative
     top: 0
     left: 0
-    
-    transition: all .3s ease-in
-    transition-delay: .5s
-    transition-property: all
+    transition: .3s ease-in
+    // transition-property: all
     visibility: hidden
     
 .btn_container
@@ -40,4 +42,33 @@ $standWidth: calc(100vw / 6.6)
 .btn_container__inner
     display: flex
     div
-        margin-right: 5px
+        margin-right: 10px
+
+.poster_inner__unmute
+    position: absolute
+    right: 15px
+    top: 155px
+
+.description_container
+    display: flex
+    margin-left: 10px
+    margin-bottom: 20px
+    font-size: 15px
+    font-weight: 550
+    span, div
+        margin-left: 7px
+
+.description_match
+    color: lightgreen
+
+.description_age
+    border: 1px solid lightgrey
+    padding: 0 7px
+
+.description_dot
+    width: 4px
+    height: 4px
+    display: inline-block
+    background: lightgrey
+    border-radius: 50%
+    align-self: center

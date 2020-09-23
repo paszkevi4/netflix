@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import s from './nav.module.sass';
 import netflixLogo from '../../img/netflix.png';
 import profileLogo from '../../img/profile.jpg';
-import { AddAlert, ArrowDropDown, CardGiftcard, Search } from '@material-ui/icons';
+import { Notifications, ArrowDropDown, CardGiftcard, Search } from '@material-ui/icons';
 
 function Navbar() {
   const [black, setBlack] = useState(false);
@@ -41,7 +41,7 @@ function Navbar() {
           <Search />
           <span>KIDS</span>
           <CardGiftcard />
-          <AddAlert />
+          <Notifications />
         </div>
 
         <img className={s.header_settings__logo} src={profileLogo} alt="avatar" />

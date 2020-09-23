@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from '../API/api';
 import URIs from '../API/requests';
 import s from './header.module.sass';
-import luciferTitle from '../../img/lucifer.png';
-import { PlayArrow, InfoOutlined } from '@material-ui/icons';
+import luciferTitle from '../../img/elite.png';
+import { PlayArrow, InfoOutlined, TrafficOutlined } from '@material-ui/icons';
 
 const Header = () => {
+  const [fullDescription, setFullDescription] = useState(true);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
@@ -19,6 +20,13 @@ const Header = () => {
     fetch();
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFullDescription(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   // TODO: rename header
   return (
     <div
@@ -27,12 +35,12 @@ const Header = () => {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
       }}>
       <div className={s.header__container}>
-        <img src={luciferTitle} alt="Lucifer" />
-
+        <img className={fullDescription ? s.img : ''} src={luciferTitle} alt="Lucifer" />
+        <p style={fullDescription ? {} : { opacity: '0', height: '0' }}>
+          Reunited by their father's death, estranged siblings with extraordinary powers uncover
+          shocking family secrets and a looming threat to humanity.
+        </p>
         <Buttons />
-
-        {/* <h1>{movie?.name}</h1> */}
-        {/* <p className={s.header__container_description}>{movie?.overview}</p> */}
       </div>
       <div className={s.header_fade}>
         <div></div>
