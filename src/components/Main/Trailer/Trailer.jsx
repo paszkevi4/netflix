@@ -1,38 +1,49 @@
-import React from 'react';
-import YouTube from 'react-youtube';
+import React, { useState } from 'react';
+
+//
+// Components
 import ReactPlayer from 'react-player/youtube';
-import moneyheist from '../../../img/mh.png';
+import { Buttons } from '../../Header/Header';
+import Button from '../../common/Button/Button';
+import { VolumeOff, VolumeUp } from '@material-ui/icons';
 
 //
 // Styles
-import { Buttons } from '../../Header/Header';
 import s from './trailer.module.sass';
+import moneyheist from '../../../img/mh.png';
 
 const Trailer = () => {
-  const opts = {
-    width: '1040px',
-    height: '585px',
-    playerVars: {
-      controls: 0,
-      rel: 0,
-      fs: 0,
-      autoplay: 0,
-      loop: 1,
+  const [muted, setMuted] = useState(true);
+  const url = 'https://www.youtube.com/watch?v=ZAXA1DV4dtI';
+
+  const config = {
+    youtube: {
+      playerVars: { end: 100, iv_load_policy: 3, modestbranding: 1, showinfo: 0 },
     },
   };
-
-  const opts1 = {
-    width: '1040px',
-    height: '585px',
-  };
-
-  const url = 'https://www.youtube.com/watch?v=ZAXA1DV4dtI&t=11s&ab_channel=Netflix';
 
   return (
     <div className={s.trailer}>
       <div className={s.trailer_video}>
-        {/* <YouTube videoId="fvCdLmxnkj0" opts={opts} /> */}
-        <ReactPlayer url={url} width="1040px" height="585px" playing muted loop />
+        <ReactPlayer
+          url={url}
+          width="100%"
+          height="100%"
+          playing
+          loop
+          muted={muted}
+          config={config}
+        />
+        <div className={s.trailer_video__cover}></div>
+        <div
+          onClick={() => {
+            setMuted(!muted);
+          }}
+          className={s.trailer_video__button}>
+          <Button
+            element={muted ? <VolumeOff fontSize="large" /> : <VolumeUp fontSize="large" />}
+          />
+        </div>
       </div>
       <div className={s.trailer_description}>
         <img src={moneyheist} alt="moneyheist" />

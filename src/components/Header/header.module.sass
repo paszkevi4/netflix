@@ -5,15 +5,15 @@ $mainLight: #f5f5f1;
 
 .header 
     object-fit: contain
-    height: 1000px
+    height: 770px
     position: relative
     background-size: cover
 
 .header__container
     position: absolute
-    z-index: 2
+    z-index: 5
     left: 60px
-    bottom: 312px
+    bottom: 82px
     display: flex
     flex-direction: column
     width: 610px
@@ -67,20 +67,29 @@ $mainLight: #f5f5f1;
 //     height: 8.5rem
 
 
-// .header_fade
-//     position: absolute
-//     top: 0
-//     width: 100%
-//     overflow: hidden
-//     height: 100%
-//     div         
-//         height: 100%
-//         background: radial-gradient(circle, transparent 25%, $mainDark)
-//         width: 150vw
+.header_player
+    top: 0
+    z-index: 2
+    width: 1920px
+    height: 1080px
+    overflow: hidden
+    position: relative
+    // div         
+    //     height: 100%
+    //     background: radial-gradient(circle, transparent 25%, $mainDark)
+    //     width: 150vw
 
-.header__fade
+.header_fade
     position: absolute
     bottom: 0
     width: 100%
-    height: 200px
-    background: linear-gradient(180deg, transparent 10%, $mainDark 90%)
+    height: 300px
+    background: linear-gradient(180deg, transparent,  $mainDark, $mainDark)
+
+.header_player__cover
+    bottom: 300px
+    z-index: 3
+    width: 1920px
+    height: 780px
+    overflow: hidden
+    position: absolute

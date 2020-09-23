@@ -6,13 +6,14 @@ import Trailer from './Trailer/Trailer';
 export const Main = () => {
   return (
     <>
-      <Row title={'TV Shows'} fetchUrl={URIs.netflixOriginals} />
+      <Row title={'Popular on Netflix'} fetchUrl={URIs.netflixOriginals} />
       <Row title={'Trending Now'} fetchUrl={URIs.trending} />
+      <Row title={'Netflix Originals'} fetchUrl={URIs.topRated} />
       <Trailer />
       <Row title={'Comedies'} fetchUrl={URIs.comedies} />
-      <Row title={'Popular on Netflix'} fetchUrl={URIs.topRated} />
+
       {/* UKRAINE */}
-      <Row title={'Netflix Originals'} fetchUrl={URIs.netflixOriginals} />
+      {/* <Row title={'Netflix Originals'} fetchUrl={URIs.netflixOriginals} /> */}
       <Row title={'Action & Adventure'} fetchUrl={URIs.actionMovies} />
       <Row title={'Documentaries'} fetchUrl={URIs.documentaries} />
       <Row title={'Dramas'} fetchUrl={URIs.dramas} />

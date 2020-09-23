@@ -24,7 +24,7 @@ const Poster = ({ movie, isVertical }) => {
         className={s.row_poster__inner}
         style={{ backgroundImage: `url(${IMAGE_URL + movie?.backdrop_path})` }}>
         <React.Suspense fallback={<div></div>}>
-          {showMovie && <PosterHovered background={`url(${IMAGE_URL + movie?.backdrop_path})`} />}
+          {showMovie && <PosterHovered movie={movie} />}
         </React.Suspense>
       </div>
     </div>
