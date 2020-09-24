@@ -3,7 +3,7 @@ import URIs from '../API/requests';
 import Row from './Row/Row';
 import Trailer from './Trailer/Trailer';
 
-export const Main = () => {
+const Main = () => {
   return (
     <>
       <Row title={'Popular on Netflix'} fetchUrl={URIs.netflixOriginals} />
@@ -22,3 +22,5 @@ export const Main = () => {
     </>
   );
 };
+
+export default Main;
