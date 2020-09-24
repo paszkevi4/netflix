@@ -1,3 +1,6 @@
+.row
+    position: relative
+
 .row__title
     z-index: 4
     position: relative
@@ -13,14 +16,29 @@
     padding-left: 60px
     position: relative
 
-.row__posters::-webkit-scrollbar
-    display: none
+.offsetswitch_container
+    position: absolute
+    bottom: 15px
+    width: 2.9vw
+    z-index: 5
+    height: calc(100vw / 11.79)
+    &:hover
+        .row__offsetswitch
+            visibility: visible
+ 
+.container_before
+    left: 0
+    border-radius: 0 3px 3px 0
 
-// .row__poster
-//     width: 175px
-//     object-fit: contain
-//     padding-right: 15px
-//     transition: transform 0.5s ease
+.container_next
+    right: 0
+    border-radius: 3px 0 0 3px 
 
-// .row__poster:hover
-//     transform: scale(1.1)
+.row__offsetswitch
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(20,20,20,.7)
+    width: 2.9vw
+    height: calc(100vw / 11.79)
+    visibility: hidden
