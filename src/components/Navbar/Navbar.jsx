@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import s from './nav.module.sass';
-import netflixLogo from '../../img/netflix.png';
 import profileLogo from '../../img/profile.jpg';
 import { Notifications, ArrowDropDown, CardGiftcard, Search } from '@material-ui/icons';
 
@@ -21,7 +20,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className={black && s.headerBlack}>
+    <div className={`${s.header} ${black && s.headerBlack}`}>
       <nav>
         <img
           className={s.header_nav__logo}
@@ -47,7 +46,7 @@ function Navbar() {
         <img className={s.header_settings__logo} src={profileLogo} alt="avatar" />
         <ArrowDropDown className={s.header_settings__button} />
       </div>
-    </header>
+    </div>
   );
 }
 

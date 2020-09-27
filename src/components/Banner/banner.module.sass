@@ -3,13 +3,14 @@ $secondaryRed: #b81d24;
 $mainDark: #111;
 $mainLight: #f5f5f1;
 
-.header 
+.banner 
     object-fit: contain
     height: 770px
     position: relative
     background-size: cover
+    z-index: -1
 
-.header__container
+.banner__container
     position: absolute
     z-index: 5
     left: 60px
@@ -31,62 +32,23 @@ $mainLight: #f5f5f1;
         transition: .7s ease-out
     .img
         width: 609px
-    
 
-.header_button__group
-    button
-        height: 58px
-        width: 158px
-        border-radius: 4px
-        font-size: 22px
-        font-weight: 700
-        outline: none
-        border: none
-        background: $mainLight
-        cursor: pointer
-        margin-right: 14px
-        padding-top: 5px
-        &:last-child
-            color: $mainLight
-            width: 212px
-            background: rgba(109, 109, 110, 0.7)
-        &:hover
-            opacity: 0.7
-        span
-            padding-left: 10px
-            vertical-align: 35%
-    
-        
-
-// .header__container_description
-//     width: 30vw
-//     font-size: 0.8rem
-//     text-align: justify
-//     overflow: hidden
-//     text-overflow: clip
-//     height: 8.5rem
-
-
-.header_player
+.banner_player
     top: 0
     z-index: 2
     width: 1920px
     height: 1080px
     overflow: hidden
     position: relative
-    // div         
-    //     height: 100%
-    //     background: radial-gradient(circle, transparent 25%, $mainDark)
-    //     width: 150vw
 
-.header_fade
+.banner_fade
     position: absolute
     bottom: 0
     width: 100%
     height: 300px
     background: linear-gradient(180deg, transparent,  $mainDark, $mainDark)
 
-.header_player__cover
+.banner_player__cover
     bottom: 300px
     z-index: 3
     width: 1920px

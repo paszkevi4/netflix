@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import axios from '../../API/api';
+import axios from '../../../API/api';
 import Poster from './Poster/Poster';
 import s from './row.module.sass';
 import { NavigateNext, NavigateBefore } from '@material-ui/icons';
-
-const IMAGE_URL = 'https://image.tmdb.org/t/p/w300/';
 
 function Row({ title, fetchUrl, isVertical }) {
   const [movies, setMovies] = useState([]);
@@ -41,8 +39,8 @@ function Row({ title, fetchUrl, isVertical }) {
     <div className={s.row}>
       <h1 className={s.row__title}>{title}</h1>
       <div className={s.row__posters} style={{ transform: `translateX(${offsets[offset]})` }}>
-        {movies.map((movie) => {
-          return <Poster movie={movie} isVertical={false} />;
+        {movies.map((movie, i) => {
+          return <Poster key={i} movie={movie} isVertical={false} />;
         })}
       </div>
       <div className={`${s.offsetswitch_container} ${s.container_before}`}>

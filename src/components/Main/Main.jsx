@@ -1,5 +1,5 @@
 import React from 'react';
-import URIs from '../API/requests';
+import URIs from '../../API/requests';
 import Row from './Row/Row';
 import Trailer from './Trailer/Trailer';
 

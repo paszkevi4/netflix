@@ -1,26 +1,26 @@
 .row
     position: relative
-
+    
 .row__title
-    z-index: 4
-    position: relative
     margin-top: 50px
     margin-bottom: 0
     padding-left: 60px
 
 .row__posters
-    z-index: 4
+    position: relative
+    z-index: 0
     display: flex
-    overflow-y: visible
     padding: 15px
     padding-left: 60px
-    position: relative
+    transition: .5s ease-out
+    &:hover
+        z-index: 7
 
 .offsetswitch_container
     position: absolute
     bottom: 15px
     width: 2.9vw
-    z-index: 5
+    z-index: 3
     height: calc(100vw / 11.79)
     &:hover
         .row__offsetswitch

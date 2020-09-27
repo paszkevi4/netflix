@@ -26,7 +26,7 @@ const PosterHovered = ({ movie }) => {
       .then((data) => {
         setUrl(data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => error);
   }, [movie]);
 
   return (

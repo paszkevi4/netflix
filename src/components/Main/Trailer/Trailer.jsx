@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 //
 // Components
 import ReactPlayer from 'react-player/youtube';
-import { Buttons } from '../../Header/Header';
+import Buttons from '../../common/PlayButtons/PlayButtons';
 import Button from '../../common/Button/Button';
 import { VolumeOff, VolumeUp } from '@material-ui/icons';
 
