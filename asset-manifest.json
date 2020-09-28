@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/netflix/static/css/main.145316d5.chunk.css",
-    "main.js": "/netflix/static/js/main.3cb6928e.chunk.js",
-    "main.js.map": "/netflix/static/js/main.3cb6928e.chunk.js.map",
-    "runtime-main.js": "/netflix/static/js/runtime-main.bc987d32.js",
-    "runtime-main.js.map": "/netflix/static/js/runtime-main.bc987d32.js.map",
-    "static/js/2.58b24286.chunk.js": "/netflix/static/js/2.58b24286.chunk.js",
-    "static/js/2.58b24286.chunk.js.map": "/netflix/static/js/2.58b24286.chunk.js.map",
-    "static/js/3.b1aedaab.chunk.js": "/netflix/static/js/3.b1aedaab.chunk.js",
-    "static/js/3.b1aedaab.chunk.js.map": "/netflix/static/js/3.b1aedaab.chunk.js.map",
+    "main.css": "/netflix/static/css/main.12523df1.chunk.css",
+    "main.js": "/netflix/static/js/main.6d3d61a4.chunk.js",
+    "main.js.map": "/netflix/static/js/main.6d3d61a4.chunk.js.map",
+    "runtime-main.js": "/netflix/static/js/runtime-main.795f735f.js",
+    "runtime-main.js.map": "/netflix/static/js/runtime-main.795f735f.js.map",
+    "static/js/2.94109b57.chunk.js": "/netflix/static/js/2.94109b57.chunk.js",
+    "static/js/2.94109b57.chunk.js.map": "/netflix/static/js/2.94109b57.chunk.js.map",
+    "static/js/3.9c8d4597.chunk.js": "/netflix/static/js/3.9c8d4597.chunk.js",
+    "static/js/3.9c8d4597.chunk.js.map": "/netflix/static/js/3.9c8d4597.chunk.js.map",
     "index.html": "/netflix/index.html",
-    "precache-manifest.d1c844b38dcd2ad0500c655f0a164bc2.js": "/netflix/precache-manifest.d1c844b38dcd2ad0500c655f0a164bc2.js",
+    "precache-manifest.8a388a22321251e92a78039e113d39c8.js": "/netflix/precache-manifest.8a388a22321251e92a78039e113d39c8.js",
     "service-worker.js": "/netflix/service-worker.js",
-    "static/css/main.145316d5.chunk.css.map": "/netflix/static/css/main.145316d5.chunk.css.map",
-    "static/js/2.58b24286.chunk.js.LICENSE.txt": "/netflix/static/js/2.58b24286.chunk.js.LICENSE.txt",
+    "static/css/main.12523df1.chunk.css.map": "/netflix/static/css/main.12523df1.chunk.css.map",
+    "static/js/2.94109b57.chunk.js.LICENSE.txt": "/netflix/static/js/2.94109b57.chunk.js.LICENSE.txt",
     "static/media/lucifer.png": "/netflix/static/media/lucifer.f4c0b899.png",
     "static/media/profile.jpg": "/netflix/static/media/profile.d0ecf7b6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc987d32.js",
-    "static/js/2.58b24286.chunk.js",
-    "static/css/main.145316d5.chunk.css",
-    "static/js/main.3cb6928e.chunk.js"
+    "static/js/runtime-main.795f735f.js",
+    "static/js/2.94109b57.chunk.js",
+    "static/css/main.12523df1.chunk.css",
+    "static/js/main.6d3d61a4.chunk.js"
   ]
 }

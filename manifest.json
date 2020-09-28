@@ -3,17 +3,17 @@
   "name": "Netflix Clone",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "netflix.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "appleLogo.svg",
+      "src": "netflix.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "appleLogo.svg",
+      "src": "netflix.svg",
       "type": "image/png",
       "sizes": "512x512"
     }
