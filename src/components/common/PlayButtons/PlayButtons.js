@@ -1,10 +1,10 @@
 import React from 'react';
-import s from './buttons.module.sass';
+import s from './playButtons.module.sass';
 import { PlayArrow, InfoOutlined } from '@material-ui/icons';
 
 const Buttons = () => {
   return (
-    <div className={s.banner_button__group}>
+    <div className={s.linkButtons}>
       <button>
         {<PlayArrow fontSize="large" />}
         <span>Play</span>

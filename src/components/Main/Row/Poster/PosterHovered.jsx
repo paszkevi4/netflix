@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import movieTrailer from 'movie-trailer';
-
 import s from './poster.module.sass';
 
 //
@@ -10,8 +9,8 @@ import Button from '../../../common/Button/Button';
 import {
   PlayArrow,
   Add,
-  ThumbUpAlt,
-  ThumbDownAlt,
+  ThumbUpAltOutlined,
+  ThumbDownAltOutlined,
   ExpandMore,
   VolumeOff,
   VolumeUp,
@@ -33,31 +32,31 @@ const PosterHovered = ({ movie }) => {
     <>
       <ReactPlayer url={url} width="400px" height="225px" playing loop muted={muted} />
       <div
-        className={s.poster_inner__unmute}
+        className={s.poster__inner_unmute}
         onClick={() => {
           setMuted(!muted);
         }}>
         <Button element={muted ? <VolumeOff fontSize="large" /> : <VolumeUp fontSize="large" />} />
       </div>
-      <div className={s.btn_container}>
-        <div className={s.btn_container__inner}>
+      <div className={s.btn__container}>
+        <div className={s.btn__container_inner}>
           <Button element={<PlayArrow fontSize="large" />} />
           <Button element={<Add fontSize="large" />} />
-          <Button element={<ThumbUpAlt />} />
-          <Button element={<ThumbDownAlt />} />
+          <Button element={<ThumbUpAltOutlined />} />
+          <Button element={<ThumbDownAltOutlined />} />
         </div>
         <Button element={<ExpandMore fontSize="large" />} />
       </div>
-      <div className={s.description_container}>
-        <span className={s.description_match}>97% Match</span>
-        <span className={s.description_age}>16+</span>
+      <div className={s.description__container}>
+        <span className={s.description__match}>97% Match</span>
+        <span className={s.description__age}>16+</span>
         <span>2 Seaseons</span>
       </div>
-      <div className={s.description_container}>
+      <div className={s.description__container}>
         <span>Quirky</span>
-        <div className={s.description_dot}></div>
+        <div className={s.description__dot}></div>
         <span>Witty</span>
-        <span className={s.description_dot}></span>
+        <span className={s.description__dot}></span>
         <span>Exciting</span>
       </div>
     </>

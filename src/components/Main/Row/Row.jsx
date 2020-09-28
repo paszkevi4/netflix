@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-
 import axios from '../../../API/api';
-import Poster from './Poster/Poster';
+
 import s from './row.module.sass';
+
+//
+// Components
+import Poster from './Poster/Poster';
 import { NavigateNext, NavigateBefore } from '@material-ui/icons';
 
 function Row({ title, fetchUrl, isVertical }) {
@@ -43,12 +46,12 @@ function Row({ title, fetchUrl, isVertical }) {
           return <Poster key={i} movie={movie} isVertical={false} />;
         })}
       </div>
-      <div className={`${s.offsetswitch_container} ${s.container_before}`}>
+      <div className={`${s.row__offsetswitch_container} ${s.container_before}`}>
         <div className={s.row__offsetswitch} onClick={decreaseOffset}>
           <NavigateBefore fontSize="large" />
         </div>
       </div>
-      <div className={`${s.offsetswitch_container} ${s.container_next}`}>
+      <div className={`${s.row__offsetswitch_container} ${s.container_next}`}>
         <div className={s.row__offsetswitch} onClick={increaseOffset}>
           <NavigateNext fontSize="large" />
         </div>

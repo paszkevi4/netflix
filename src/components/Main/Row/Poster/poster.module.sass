@@ -1,6 +1,6 @@
 $standWidth: calc(100vw / 6.55)
 
-.row_poster
+.row__poster
     min-width: $standWidth
     height: calc(#{$standWidth} / 1.8)
     margin-right: 5px
@@ -9,7 +9,7 @@ $standWidth: calc(100vw / 6.55)
     position: relative
     cursor: pointer
     &:hover
-        .row_poster__inner
+        .row__poster_inner
             height: 400px
             width: 400px
             transition-delay: .5s
@@ -18,7 +18,7 @@ $standWidth: calc(100vw / 6.55)
             top: -120px
             left: calc((200px - #{$standWidth / 2}) * -1)
 
-.row_poster__inner
+.row__poster_inner
     z-index: 7
     width: calc(#{$standWidth} )
     height: calc(#{$standWidth} / 1.8)
@@ -35,22 +35,22 @@ $standWidth: calc(100vw / 6.55)
     cursor: pointer
     visibility: hidden
     
-.btn_container
+.btn__container
     display: flex
     justify-content: space-between
     padding: 20px 15px
 
-.btn_container__inner
+.btn__container_inner
     display: flex
     div
         margin-right: 10px
 
-.poster_inner__unmute
+.poster__inner_unmute
     position: absolute
     right: 15px
     top: 155px
 
-.description_container
+.description__container
     display: flex
     margin-left: 10px
     margin-bottom: 20px
@@ -59,14 +59,14 @@ $standWidth: calc(100vw / 6.55)
     span, div
         margin-left: 7px
 
-.description_match
+.description__match
     color: lightgreen
 
-.description_age
+.description__age
     border: 1px solid lightgrey
     padding: 0 7px
 
-.description_dot
+.description__dot
     width: 4px
     height: 4px
     display: inline-block
