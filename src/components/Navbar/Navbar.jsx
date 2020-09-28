@@ -20,31 +20,31 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`${s.header} ${black && s.headerBlack}`}>
+    <div className={`${s.header} ${black && s.header_black}`}>
       <nav>
         <img
-          className={s.header_nav__logo}
+          className={s.header__nav_logo}
           src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
           alt="NETFLIX"
         />
-        <span className={s.nav_box}>
-          <a href="/home">Home</a>
-          <a href="#">TV Shows</a>
-          <a href="#">Movies</a>
-          <a href="#">Latest</a>
-          <a href="#">My List</a>
+        <span className={s.nav__box}>
+          <button href="#">Home</button>
+          <button href="#">TV Shows</button>
+          <button href="#">Movies</button>
+          <button href="#">Latest</button>
+          <button href="#">My List</button>
         </span>
       </nav>
-      <div className={s.settings}>
-        <div className={s.header_settings__buttons}>
-          <Search />
+      <div className={s.header__settings}>
+        <div className={s.header__settings_buttons}>
+          <Search className={s.button_search} />
           <span>KIDS</span>
-          <CardGiftcard />
-          <Notifications />
+          <CardGiftcard className={s.button_gift} />
+          <Notifications className={s.button_nitification} fontSize="large" />
         </div>
 
-        <img className={s.header_settings__logo} src={profileLogo} alt="avatar" />
-        <ArrowDropDown className={s.header_settings__button} />
+        <img className={s.header__settings_logo} src={profileLogo} alt="avatar" />
+        <ArrowDropDown className={s.header__settings_button} />
       </div>
     </div>
   );

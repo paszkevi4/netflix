@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 //
 // Components
 import ReactPlayer from 'react-player/youtube';
-import Buttons from '../../common/PlayButtons/PlayButtons';
 import Button from '../../common/Button/Button';
 import { VolumeOff, VolumeUp } from '@material-ui/icons';
+import Buttons from '../../common/PlayButtons/PlayButtons';
 
 //
 // Styles
@@ -24,7 +24,7 @@ const Trailer = () => {
 
   return (
     <div className={s.trailer}>
-      <div className={s.trailer_video}>
+      <div className={s.trailer__video}>
         <ReactPlayer
           url={url}
           width="100%"
@@ -34,18 +34,18 @@ const Trailer = () => {
           muted={muted}
           config={config}
         />
-        <div className={s.trailer_video__cover}></div>
+        <div className={s.trailer__video_cover}></div>
         <div
           onClick={() => {
             setMuted(!muted);
           }}
-          className={s.trailer_video__button}>
+          className={s.trailer__video_button}>
           <Button
             element={muted ? <VolumeOff fontSize="large" /> : <VolumeUp fontSize="large" />}
           />
         </div>
       </div>
-      <div className={s.trailer_description}>
+      <div className={s.trailer__description}>
         <img src={moneyheist} alt="moneyheist" />
         <Buttons />
         <p>

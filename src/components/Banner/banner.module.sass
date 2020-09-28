@@ -5,16 +5,16 @@ $mainLight: #f5f5f1;
 
 .banner 
     object-fit: contain
-    height: 770px
+    height: 79.5vh
     position: relative
     background-size: cover
-    z-index: -1
+    z-index: 0
 
 .banner__container
     position: absolute
     z-index: 5
     left: 60px
-    bottom: 82px
+    bottom: 9vh
     display: flex
     flex-direction: column
     width: 610px
@@ -33,22 +33,41 @@ $mainLight: #f5f5f1;
     .img
         width: 609px
 
-.banner_player
+.banner__mute
+    position: absolute
+    z-index: 5
+    right: 0
+    bottom: 7vh
+    display: flex
+    flex-direction: row
+    div
+        margin-left: 20px
+
+.banner__mute_advisory
+    height: 46px
+    width: 121px
+    font-size: 21px
+    padding: 11px 15px
+    box-sizing: border-box
+    background: rgba(51, 51, 51, .4)
+    border-left: 3px solid #dcdcdc
+
+.banner__player
     top: 0
     z-index: 2
-    width: 1920px
-    height: 1080px
+    width: 100vw
+    height: 56.25vw
     overflow: hidden
     position: relative
 
-.banner_fade
+.banner__fade
     position: absolute
     bottom: 0
     width: 100%
     height: 300px
     background: linear-gradient(180deg, transparent,  $mainDark, $mainDark)
 
-.banner_player__cover
+.banner__player_cover
     bottom: 300px
     z-index: 3
     width: 1920px

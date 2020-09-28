@@ -9,52 +9,71 @@ $mainLight: #f5f5f1;
     z-index: 10
     display: flex
     justify-content: space-between
-    width: 100%
+    width: 100vw
     height: 68px
     transition: .6s ease
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
 
-.headerBlack
+.header_black
     background-color: $mainDark
 
 nav
     padding: 22px 0 0 60px
 
-.nav_box
+.nav__box
     height: 16px
     width: 336px
     display: inline-flex
     justify-content: space-around
     margin-left: 35px
-    margin-top: 5px
+    margin-top: 3px
     vertical-align: top
-    a
+    button
+        font-size: 14px
+        background: none 
+        border: none
         color: #fff
         text-decoration: none
+        &:first-child
+            font-weight: 700
+        &:hover
+            transition: .2s
+            color: rgba(255, 255, 255, .7)
+        
 
-.settings
+.header__settings
     display: flex
-    padding: 17px 55px 0 0 
+    padding: 17px 70px 0 0 
     vertical-align: top
         
-.header_nav__logo
+.header__nav_logo
     object-fit: contain
     height: 25px
 
-.header_settings__logo
+.header__settings_logo
     height: 33px
     object-fit: contain
     border-radius: 5px
 
-.header_settings__buttons
+.header__settings_buttons
     display: flex
     vertical-align: top
-    margin-top: 5px
-    svg
-        margin-right: 24px
     span
-        margin-top: 5px
+        margin-top: 9px
         margin-right: 24px
 
-.header_settings__button
+.button_search
     margin-top: 5px
+    margin-right: 22px
+
+.button_gift
+    margin-top: 5px
+    margin-right: 23px
+
+.button_nitification
+    margin-right: 17px
+
+
+.header__settings_button
+    margin-top: 5px
+    margin-left: 3px
